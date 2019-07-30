@@ -24,7 +24,7 @@ class VacationMessagePlugin extends StudIPPlugin implements SystemPlugin
         $actions->addLink(
             _("Abwesenheitsnachricht konfigurieren"),
             PluginEngine::getURL($this, array(), "message/settings"),
-            Icon::create("admin"),
+            Icon::create($this->getPluginURL()."/assets/vacancy-1.svg"),
             array('data-dialog' => 1)
         );
     }
